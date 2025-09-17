@@ -3,8 +3,8 @@ import Navbar from "../../components/layout/Navbar";
 import Images from "../../components/constant/Image";
 import { MdErrorOutline } from "react-icons/md";
 import MoviesCard from "../../components/moviesCard/moviesCard";
-
 import { FaPlay } from "react-icons/fa";
+import Footer from "../../components/layout/Footer";
 
 function Home() {
   return (
@@ -47,7 +47,10 @@ function Home() {
         <MoviesCard title="Popular Shows" />
         <MoviesCard title="New Releases" />
       </div>
+      <Footer />
+
     </div>
+
   );
 }
 
