@@ -20,7 +20,8 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="navbar flex items-center justify-between px-6 md:px-12 py-4  text-white relative fixed top-0 left-0 right-0 z-50">
+    <div className="flex items-center justify-between px-6 md:px-24 py-4 
+        fixed top-0 left-0 right-0 z-50">
       {/* Left Side */}
       <div className="flex items-center gap-8">
         {/* Logo */}
@@ -93,12 +94,12 @@ function Navbar() {
 
       {/* Mobile Nav */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black flex flex-col items-center gap-6 py-6 md:hidden transition-all duration-300">
+        <div className="absolute top-16 left-0 w-full bg-black/10 flex flex-col items-center gap-6 py-6 md:hidden transition-all duration-300">
           {["Home", "Movies", "My List", "TV Shows"].map((link) => (
             <a
               key={link}
               href="/"
-              className="py-2 px-20 hover:bg-gray-800 w-full text-center"
+              className="py-2 hover:bg-gray-700/20 w-full text-center"
               onClick={() => setIsMenuOpen(false)}
             >
               {link}
