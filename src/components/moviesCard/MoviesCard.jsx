@@ -1,5 +1,5 @@
 import React, {  useRef,useEffect } from 'react'
-import CardData from '/Public/cards/Cards_Data.js'
+import CardData from '/public/cards/Cards_Data.js'
 import './moviesCard.css'
 
 function MoviesCard({title}) {
