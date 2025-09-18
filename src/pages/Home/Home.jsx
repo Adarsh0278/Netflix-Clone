@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/layout/Navbar";
 import Images from "../../components/constant/Image";
 import { MdErrorOutline } from "react-icons/md";
-import MoviesCard from "../../components/moviesCard/moviesCard";
+import MoviesCard from "../../components/moviesCard/MoviesCard"; // Updated casing
 import { FaPlay } from "react-icons/fa";
 import Footer from "../../components/layout/Footer";
 
@@ -43,14 +43,12 @@ function Home() {
 
       {/* Movies Sections */}
       <div className="relative z-20 -mt-32 scrollbar-hide">
-        <MoviesCard title="Trending Now"  className="scrollbar-hide"/>
+        <MoviesCard title="Trending Now" className="scrollbar-hide" />
         <MoviesCard title="Popular Shows" />
         <MoviesCard title="New Releases" />
       </div>
       <Footer />
-
     </div>
-
   );
 }
 

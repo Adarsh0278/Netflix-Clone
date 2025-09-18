@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
+import Home from './pages/Home/Home'  // Updated casing
 import Login from './pages/Login/Login'
 
 function App() {
